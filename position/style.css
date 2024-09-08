@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 10px;
+}
+
+section {
+  border: solid gold;
+  margin: 10px;
+  height: 400px;
+  position: relative;
+}
+
+.static {
+  background-color: mediumvioletred;
+  width: 200px;
+  height: 200px;
+  position: static;
+}
+
+.relative {
+  background-color: darkblue;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 40px;
+}
+
+.absolute {
+  width: 200px;
+  height: 200px;
+  background-color: darkgreen;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sticky {
+  background-color: red;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.fixed {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+  height: 10vh;
+  background-color: aquamarine;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}/*# sourceMappingURL=style.css.map */

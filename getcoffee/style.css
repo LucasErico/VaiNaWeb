@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 1px 8px rgba(36, 36, 36, 0.1490196078);
+  height: 12vh;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
+  list-style: none;
+}
+@media (max-width: 600px) {
+  header ul {
+    margin-top: 1vh;
+    width: 50vw;
+  }
+}/*# sourceMappingURL=style.css.map */

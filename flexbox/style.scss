@@ -1,0 +1,46 @@
+.container1{
+    border: solid tomato;
+    display: flex;//ativando o flexbox, ele deixa todas as tags do container uma ao lado da outra
+    //justify-content: center;
+    //centralizar os elementos ao centro
+    //justify-content: flex-start;//padrão alinhado ao inicio do container
+    //justify-content: flex-end;//alinhado ao fim do container
+    //justify-content: space-between;//Espaço entre os elementos
+    //justify-content: space-around;//espaço ao redor dos elementos
+    justify-content: space-evenly;//espaçamento igual ao redor de cada tag
+}
+
+.item1{
+    border: solid green;
+}
+
+.container2{
+    border: palevioletred solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    //align-items: stretch;//esticado do inicio ao fim
+    //align-items: center;//alinhar ao centro da altura
+    //align-items: flex-end;// ao final do eixo y - altura
+    //align-items: flex-start;// alinhar ao inicio do eixo y- altura
+}
+
+.item2{
+    border: purple solid;
+    //text-align: justify;
+}
+
+.container3{
+    border: solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //muda a direção
+    flex-direction: column-reverse;//organizar em coluna, um abaixo do outro
+    height: 100px;
+}
+
+.item3{
+    border: solid rgb(69, 69, 181);
+}

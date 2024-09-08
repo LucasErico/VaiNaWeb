@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111111;
+  height: 10vh;
+  padding: 0px 30px;
+}
+header img {
+  height: 70%;
+}
+
+main {
+  background-color: #181818;
+  padding: 10vh 0 20vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  height: 20vh;
+  width: 90%;
+  margin: 6vh 0;
+  font-size: 2em;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title h1 {
+  font-weight: 700;
+}
+.title h2 {
+  font-weight: 400;
+}
+.title img {
+  height: 100%;
+}
+
+.episodes {
+  height: 70vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.episodes div {
+  height: 100%;
+  width: 28%;
+}
+.episodes div h3 {
+  padding: 20px 0;
+}
+.episodes div img {
+  width: 100%;
+}
+
+footer {
+  background-color: #111111;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5vw;
+}/*# sourceMappingURL=style.css.map */

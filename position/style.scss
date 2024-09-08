@@ -1,0 +1,66 @@
+*{
+    //reset
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-left: 10px;
+}
+
+section{
+    border: solid gold;
+    margin: 10px;
+    height: 400px;
+    position: relative;
+}
+.static{
+    background-color: mediumvioletred;
+    width: 200px;
+    height: 200px;
+    position: static;//padrão
+    // a tag vai se posicionar de acordo com o fluxo prdrão, não vai ter nenhuma alteração na sua posição.
+}
+
+.relative{
+    background-color: darkblue;
+    width: 200px;
+    height: 200px;
+    // é posicionada de acordo com o seu fluxo normal,
+    //ajustar a tag para qualquer lado, usando as propriedades: top, right, left e bottom
+    position: relative;
+    left: 40px;
+    //top: 20px;//a div foi empurrada 20px para baixo
+    //top, right, left e bottom
+}
+
+.absolute{
+    width: 200px;
+    height: 200px;
+    background-color: darkgreen;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sticky{
+    background-color: red;
+    height: 50px;
+    position: sticky;//colado/pegajoso
+    top: 0;
+    z-index: 1;//profundidade
+}
+
+.fixed
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: aquamarine;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
