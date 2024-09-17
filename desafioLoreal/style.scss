@@ -1,0 +1,193 @@
+$peso: 500;
+
+@mixin flexbox
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Kodchasan", sans-serif;
+    overflow-x: hidden;
+    background-color: #EFEEF3;
+    font-weight: $peso;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header
+{
+    width: 100%;
+    height: 10vh;
+    padding: 0 1vw;
+    @include flexbox();
+
+    @media(max-width: 700px)
+    {
+     height: fit-content;
+     flex-direction: column;
+    }
+  
+    img
+    {
+        width: 10vw;
+        @media(max-width: 700px)
+        {
+            width: 50%;
+            margin: 5vh 0;
+        }
+    }
+
+    ul
+    {
+        width: 80%;
+        @include flexbox();
+        justify-content: space-around;
+        list-style: none;
+
+        @media(max-width: 700px)
+        {
+            height: 30vh;
+            flex-direction: column;
+            font-size: 1.5em;
+        }
+
+        li
+        {
+            @media(max-width: 700px)
+            {
+                font-size: 1.5em;
+            }
+
+            @media(max-width: 960px)
+            {
+            font-size: 0.7em;
+            }
+
+        }
+  
+    }
+}
+
+.banner
+{
+    width: 100%;
+    @media (max-width: 700px)
+    {
+        display: none;
+    }
+}
+
+.content
+{
+    width: 80%;
+    margin: 5vh 0;
+    @include flexbox();
+
+    @media(max-width: 700px)
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    img
+    {
+        width: 40%;
+        @media(max-width: 700px)
+        {
+            width: 90%;
+        }
+    }
+
+    div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 45%;
+        font-size: 1.5em;
+
+        @media(max-width: 700px)
+        {
+            width: 90%;
+            margin-top: 5vh;
+            font-size: 1.3em;
+        }
+
+        h2
+        {
+            font-weight: $peso;
+            margin-bottom: 5vh;
+        }
+    }
+}
+
+.produtos
+{
+    width: 100%;
+    @include flexbox();
+    justify-content: space-around;
+    margin: 10vh 0;
+    font-size: 1.5em;
+    padding-left: 5%;
+
+    @media(max-width: 700px)
+    {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 2vh;
+        font-size: 1.2em;
+        padding: 0;
+        text-align: center;
+    }
+
+    h3
+    {
+        font-weight: $peso;
+        width: 40%;
+
+        @media(max-width: 700px)
+        {
+            width: 90%;
+        }
+    }
+
+    div
+    {
+        @include flexbox();
+        justify-content: space-around;
+        width: 60%;
+        margin-top: 2vh;
+
+        @media(max-width: 700px)
+        {
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 90%;
+        }
+        
+        img
+        {
+            @media(max-width: 700px)
+            {
+                margin: 3vh 5vw;
+            }
+        }
+    }
+}

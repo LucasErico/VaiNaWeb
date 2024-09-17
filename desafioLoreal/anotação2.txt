@@ -1,0 +1,119 @@
+$peso: 400;
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: aqua;
+}
+
+main
+{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+
+}
+
+
+header
+{
+    width: 100vw;
+    height: 10vh;
+    padding: 0 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+
+    
+
+    img
+    {
+        width: 10vw;
+    }
+
+    ul
+    {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+}
+
+.banner
+{
+
+    width: 100%;
+    border: solid;
+    img
+    {
+        width: 100%;
+    }
+
+}
+
+.content
+{
+    width: 80%;
+    margin: 5vh 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img
+    {
+        width: 40%;
+    }
+
+    div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        font-size: 1.5em;
+
+        h2
+        {
+            text-align: center;
+            font-weight: $peso;
+            margin: 0 0 5vh 0;
+        }
+
+        p
+        {
+            text-align: center;
+        }
+    }
+}
+
+.produtos
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10vh 0;
+    font-size: 1.5em;
+    width: 100%;
+
+    padding-left: 5%;
+
+
+    h3
+    {
+        font-weight: $peso;
+        width: 40%;
+    }
+}
